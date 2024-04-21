@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Model Display with Model Viewer</title>
+    <!-- Include Model Viewer Library -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 100%;  /* Adjust to fit the width of the viewport */
+            height: 600px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Model Viewer Element -->
+<model-viewer src="Z-line-9.glb" 
+              auto-rotate camera-controls
+              rotation-per-second="0deg"
+              orientation="90deg 0deg 0deg"  <!-- Rotation of the model -->
+              autoplay animation-name="all">
+</model-viewer>
+
+</body>
+</html>
